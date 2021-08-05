@@ -1,0 +1,34 @@
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header ad "
+                         "aside main ad"
+                         "footer footer ad";
+    gap: 5px;
+
+
+}
+body{
+    background: whitesmoke;
+}
+
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+div.ad{
+    grid-area: ad;
+}
